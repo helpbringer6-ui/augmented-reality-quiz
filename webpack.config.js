@@ -1,31 +1,31 @@
 const path = require('path');
 
 module.exports = {
-    // Entry point for the application
+    // Einstiegspunkt für die Anwendung
     entry: './src/main.js',
     output: {
-        // Output bundle file
+        // Ausgabebündeldatei
         filename: 'bundle.js',
-        // Output path for the bundle
+        // Ausgabepfad für das Bündel
         path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
-        // Static file serving directory
+        // Verzeichnis für die Bereitstellung statischer Dateien
         contentBase: path.join(__dirname, 'dist'),
-        // Enable gzip compression
+        // Gzip-Kompression aktivieren
         compress: true,
-        // Port for the dev server
+        // Port für den Entwicklungsserver
         port: 9000,
     },
     module: {
         rules: [
             {
-                // Transpile JavaScript files
+                // JavaScript-Dateien transpilieren
                 test: /\.js$/, 
-                // Exclude node_modules directory
+                // Verzeichnis node_modules ausschließen
                 exclude: /node_modules/, 
                 use: {
-                    // Use Babel loader for transpilation
+                    // Babel-Loader für die Transpilation verwenden
                     loader: 'babel-loader',
                 },
             },
