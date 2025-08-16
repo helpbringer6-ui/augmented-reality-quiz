@@ -7,7 +7,7 @@ module.exports = {
         // Ausgabebündeldatei
         filename: 'bundle.js',
         // Ausgabepfad für das Bündel
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'), // Pfad zur Ausgabe des Bundles
     },
     devServer: {
         // Verzeichnis für die Bereitstellung statischer Dateien
