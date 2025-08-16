@@ -29,6 +29,13 @@ module.exports = {
                     loader: 'babel-loader',
                 },
             },
+            {
+                // CSS-Dateien verarbeiten
+                test: /\.css$/, 
+                // Verzeichnis node_modules ausschließen
+                exclude: /node_modules/, 
+                use: ['style-loader', 'css-loader'],
+            },
         ],
     },
 };
