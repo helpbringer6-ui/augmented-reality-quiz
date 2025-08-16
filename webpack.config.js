@@ -21,7 +21,7 @@ module.exports = {
         rules: [
             {
                 // Transpile JavaScript files
-                test: /.js$/, 
+                test: /\.js$/, 
                 // Exclude node_modules directory
                 exclude: /node_modules/, 
                 use: {
