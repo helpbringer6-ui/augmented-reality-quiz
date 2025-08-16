@@ -1,7 +1,7 @@
 {
   "name": "augmented-reality-quiz",
   "version": "1.0.0",
-  "description": "Ein interaktives Quizspiel, das Augmented Reality nutzt.",
+  "description": "An interactive quiz game that uses Augmented Reality.",
   "main": "src/main.js",
   "scripts": {
     "start": "webpack serve --open"
